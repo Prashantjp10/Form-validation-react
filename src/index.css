@@ -1,13 +1,44 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 540px;
+   /* width: 100%; */
+   min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.input-field input {
+   outline: none;
+   border: none;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+}
+.input-field label {
+   font-weight: 600;
+}
+
+.create-user {
+   width: 70%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.1);
+   padding: 30px 90px;
+}
+
+.err-field {
+   color: red;
+}
+
+.message-success {
+   width: 70%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   padding: 10px;
+}
+@media only screen and (max-width: 756px) {
+   .app-container {
+   }
 }
